@@ -35,11 +35,7 @@ jobs:
 
       - name: Clone source code
         run: |
-          GMEEK_VERSION=$(jq -r ".GMEEK_VERSION" config.json)
-          if [ -d "/opt/Gmeek" ]; then
-            echo "Directory exists."
-          else
-            mkdir -p /opt/Gmeek/
+          mkdir -p /opt/Gmeek/
           git clone https://github.com/bigworldxld/duxu-dailylife1.git /opt/Gmeek;
           cd /opt/Gmeek/
 
