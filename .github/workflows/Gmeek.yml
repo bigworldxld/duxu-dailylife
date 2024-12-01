@@ -36,7 +36,7 @@ jobs:
       - name: Clone source code
         run: |
           mkdir -p /opt/Gmeek/
-          git clone https://github.com/bigworldxld/duxu-dailylife1.git /opt/Gmeek;
+          git clone https://github.com/bigworldxld/duxu-setdailylife.git /opt/Gmeek;
           cd /opt/Gmeek/
 
       - name: Install dependencies
