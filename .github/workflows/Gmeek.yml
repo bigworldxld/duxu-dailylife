@@ -39,7 +39,6 @@ jobs:
           mkdir -p /opt/Gmeek/
           git clone https://github.com/bigworldxld/duxu-dailylife1.git /opt/Gmeek;
           cd /opt/Gmeek/
-          lastTag=$(git describe --tags `git rev-list --tags --max-count=1`)
           if [ $GMEEK_VERSION == 'last' ]; then git checkout $GMEEK_VERSION; else git checkout $GMEEK_VERSION; fi;
 
       - name: Install dependencies
