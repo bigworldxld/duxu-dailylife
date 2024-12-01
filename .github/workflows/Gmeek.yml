@@ -39,7 +39,6 @@ jobs:
           mkdir -p /opt/Gmeek/
           git clone https://github.com/bigworldxld/duxu-dailylife1.git /opt/Gmeek;
           cd /opt/Gmeek/
-          git checkout $GMEEK_VERSION;
 
       - name: Install dependencies
         run: |
